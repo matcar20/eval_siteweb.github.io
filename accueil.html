@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--li le contenu css et affiche le nom dans l'onglet de la navigation-->
+<header class="jumbotron text-center" style="margin-bottom: 0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Lost in Space</title>
+</header>
+
+<!--corp du site-->
+
+<body>
+
+    <div class="container-fluid" style="margin-top:30px;">
+        <div class="row">
+            <div class="col-sm-8">
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+    <!--Titre de la page -->
+    <h1>Lost in space</h1>
+
+    <!--barre de navigation-->
+    <nav class="navbar navbar-expand-sm" style="background-color: rgb(189, 246, 246);">
+        <a class="navbar-brand" href="accueil.html">Accueil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="diffusions,saisons.html">Diffusions</a></li>
+                <li class="nav-item"><a class="nav-link" href="personnages.html">Personnages</a></li>
+                <button class="theme-toggler" data-theme-toggler>Changer de theme</button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">recherche</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!--carousel-->
+    <div id="idCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <ul class="carousel-indicators">
+            <li data-target="#idCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#idCarousel" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="mx-auto d-block img-fluid" style="height: auto;" src="./images/affiche.jpg"
+                    alt="Marilyn Monroe Graffiti" />
+            </div>
+            <div class="carousel-item">
+                <img class="mx-auto d-block img-fluid" style="height:auto" src="./images/image_casque.jpg"
+                    alt="Le retour du Jedi" />
+            </div>
+            <div class="carousel-item">
+                <img class="mx-auto d-block img-fluid" style="height:auto" src="./images/image_robot.jpg"
+                    alt="the_beatles_abbey_road_high" />
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#idCarousel" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+        <a class="carousel-control-next" href="#idCarousel" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+    </div>
+
+    <!-- information -->
+    <div>
+        <ul>
+            <h2>introduction</h2>
+        </ul>
+
+        <ul>
+            <p><i>Lost in Space </i>est une série de science-fiction qui suit la famille Robinson, envoyée dans l'espace
+                pour établir une colonie humaine sur une planète lointaine. <br>
+                Cependant, leur mission tourne mal lorsque leur vaisseau, le Resolution, se crashe sur une planète
+                inconnue.<br>
+                La famille doit alors survivre dans un environnement hostile tout en faisant face à des dangers
+                imprévus, dont des créatures extraterrestres et des défaillances technologiques.<br>
+                Au cœur de l'histoire se trouve le personnage du Dr. Smith, un usurpateur manipulatif qui met en péril
+                la sécurité du groupe.<br>
+                La série explore des thèmes de survie, de famille et d'adrénaline, tout en développant les relations
+                entre les membres des Robinson, leur évolution personnelle, et leur lutte pour échapper à leur situation
+                précaire. <br>
+                <i>Lost in Space</i> combine action, suspense et moments poignants pour offrir un récit captivant sur la
+                conquête de l'inconnu.
+            </p>
+        </ul>
+    </div>
+
+    <!--images-->
+    <figure>
+        <img src="./images/jupiter.jpeg" class="rounded float-start " alt="vaisseau des colombs" />
+    </figure>
+
+    <figure>
+        <img src="./images/le_resolution.jpg" class="rounded float-end" alt="vaisseau des colombs" />
+    </figure>
+
+    <figure>
+        <img src="./images/rover.jpg" class="rounded centrer-rover" alt="vaisseau des colombs" />
+    </figure>
+
+
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!--pied de page avec information-->
+    <footer class="jumbotron text-center" style="margin-top:10">
+        <div>
+            <hr>
+            <address>Magnigique-web <br> portail de costebelle - 83 400 Hyeres </address>
+
+
+            <div class="container mt-5">
+                <span class="mot-censure" onclick="revealWord(this)">
+                    <span class="bar-noir">******</span>
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--script java-->
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--li le contenu css et affiche le nom dans l'onglet de la navigation-->
+<header class="jumbotron text-center" style="margin-bottom: 0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Lost in space</title>
+</header>
+
+<!--corp du site-->
+
+<body>
+    <div class="container-fluid" style="margin-top:30px;">
+        <div class="row">
+            <div class="col-sm-8">
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+    <!--Titre de la page -->
+    <h1>Personnages</h1>
+
+    <!-- barre de navigation -->
+    <nav class="navbar navbar-expand-sm" style="background-color: rgb(189, 246, 246);">
+        <a class="navbar-brand" href="personnages.html">Personnages</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="diffusions,saisons.html">Diffusions</a></li>
+                <li class="nav-item"><a class="nav-link" href="accueil.html">acceuil</a></li>
+                <button class="theme-toggler" data-theme-toggler>Changer de theme</button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">recherche</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!--carousel-->
+    <div id="idCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <ul class="carousel-indicators">
+            <li data-target="#idCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#idCarousel" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="mx-auto d-block img-fluid" style="height: auto;" src="./images/affiche.jpg"
+                    alt="Marilyn Monroe Graffiti" />
+            </div>
+            <div class="carousel-item">
+                <img class="mx-auto d-block img-fluid" style="height:auto" src="./images/image_casque.jpg"
+                    alt="Le retour du Jedi" />
+            </div>
+            <div class="carousel-item">
+                <img class="mx-auto d-block img-fluid" style="height:auto" src="./images/image_robot.jpg"
+                    alt="the_beatles_abbey_road_high" />
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#idCarousel" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+        <a class="carousel-control-next" href="#idCarousel" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+    </div>
+
+    <!-- information -->
+    <div>
+        <h2>La famille Robinson !</h2>
+        <p>
+        <ul><b>John Robinson :</b> Le père, ancien militaire et chef de la mission, est un homme courageux, pragmatique
+            et
+            protecteur. <br>Il est déterminé à protéger sa famille dans l'environnement hostile où ils se trouvent après
+            le
+            crash. Il prend des décisions difficiles pour assurer la survie de tous.
+        </ul>
+        <ul>
+            <b>Maureen Robinson :</b> La mère, brillante ingénieure et scientifique, est l'intellectuel de la
+            famille.<br>
+            C'est
+            elle qui a conçu la mission et qui joue un rôle crucial dans la résolution des problèmes techniques sur la
+            planète inconnue. <br>Elle est forte, mais son dévouement à sa famille est parfois mis à l'épreuve par les
+            défis
+            de leur situation.
+        </ul>
+        <ul>
+            <b>Judy Robinson :</b> L'aînée des enfants, elle est une adolescente sérieuse et réfléchie, passionnée par
+            les
+            sciences comme sa mère. <br>En tant que médecin, elle joue un rôle important dans la gestion des soins de
+            santé
+            et prend souvent des responsabilités supplémentaires, notamment en période de crise.
+        </ul>
+        <ul>
+            <b>Penny Robinson :</b> La deuxième fille, plus jeune que Judy, est souvent vue comme une source d'humour et
+            de
+            légèreté. <br>Curieuse et intelligente, elle se montre aussi capable d'une grande perspicacité, tout en
+            étant
+            sensible aux tensions au sein de la famille.
+        </ul>
+        <ul>
+            <b>Will Robinson :</b> Le plus jeune des enfants, il est extrêmement intelligent et inventif. Will a une
+            relation
+            particulière avec le robot, une entité extraterrestre qui les accompagne. <br>Sa curiosité et sa créativité
+            sont
+            des atouts majeurs pour la famille dans leurs efforts pour survivre et trouver un moyen de s'échapper.
+        </ul>
+        </p>
+
+        <!--image-->
+        <figure>
+            <img src="./images/robinson.jpg" class=" d-block mx-auto rounded" alt="famille robinson" />
+        </figure>
+    </div>
+
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!--pied de page avec information-->
+    <footer class="jumbotron text-center" style="margin-top:10">
+        <div>
+            <hr>
+            <address>Magnigique-web <br> portail de costebelle - 83 400 Hyeres </address>
+
+
+            <div class="container mt-5">
+                <span class="mot-censure" onclick="revealWord(this)">
+                    <span class="bar-noir">******</span>
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--script java-->
+    <script src="script.js"></script>
+</body>
+
+
+</html>
